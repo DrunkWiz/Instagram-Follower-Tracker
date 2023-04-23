@@ -1,0 +1,47 @@
+following = """Sample1
+Apr 23, 2023, 5:47 AM
+Sample2
+Apr 23, 2023, 5:45 AM
+Sample3
+Apr 23, 2023, 5:45 AM
+Sample4
+Apr 23, 2023, 5:43 AM
+Sample5
+Apr 22, 2023, 8:05 PM"""
+
+followers = """Sample1
+Apr 23, 2023, 5:49 AM
+Sample2
+Apr 23, 2023, 5:47 AM
+Sample4
+Apr 23, 2023, 5:47 AM
+Sample6
+Apr 20, 2023, 10:59 PM
+Sample7
+Apr 20, 2023, 3:26 AM""" #Sample3 is not a follower, You do not follow Sample6
+
+### To use the instagram following follower checker, replace the following with the list similar to the one shown in following
+### replace the followerer list similar to one shown in follower
+
+months = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"]
+
+following1 = following.split("\n")
+# print(g1[0:10], g1[-10:], end ="\n")
+
+following1 = following1[0:-1:2]
+# print(g1[0:10], g1[-10:], end ="\n")
+
+followers1 = followers.split("\n")
+followers1 = followers1[0:-1:2]
+
+# print(g1,j1)
+
+not_following_you_back = set(following1).difference(set(followers1))
+does_not_follow_back = list(not_following_you_back)
+
+print("Accounts that do not follow you back:" , *does_not_follow_back, sep='\n')
+
+you_dont_follow_back1 = set(followers1).difference(set(following1))
+you_dont_follow_back = list(you_dont_follow_back1)
+
+print("Accounts that you do not follow back: ", *does_not_follow_back, sep='\n')
