@@ -45,4 +45,4 @@ print("\n")
 you_dont_follow_back1 = set(followers1).difference(set(following1))
 you_dont_follow_back = list(you_dont_follow_back1)
 
-print("Accounts that you dont follow: ", *you_dont_follow_back, sep='\n')
+print("Accounts you dont follow: ", *you_dont_follow_back, sep='\n')
