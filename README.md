@@ -18,7 +18,7 @@ In the following and followers file; Click on the followers_1.html and following
 Open these and copy all the names and timestamps from the file.
 ![image](https://user-images.githubusercontent.com/32932464/233856871-ff829d18-6776-45fb-a980-77537219bc03.png)
 
-Do this for both following and followers and replace the strings in the follower_not_following file. Replace following and followers accordingly.
+Do this for both following and followers and replace the strings in the Check not following file. Replace following and followers accordingly.
 
 Once that is done, run the python file and all the usernames will be printed!
 
