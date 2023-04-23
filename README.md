@@ -1,5 +1,10 @@
 # Instagram-Follower-Tracker
 
+## Introduction
+This was built as I realised that many Instagram tracker apps currently make these simple services paid. Using the tracker apps to check also violate Instagrams terms of service (TOS), this could cause you to lose your account.
+To help avoid these issues, I created this simple tutorial to help check people you follow who do not follow you back and for followers that you do not follow.
+
+
 ### Step 1, Request for data
 https://help.instagram.com/181231772500920/?cms_platform=iphone-app&helpref=platform_switcher
 
