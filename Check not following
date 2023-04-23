@@ -39,10 +39,10 @@ followers1 = followers1[0:-1:2]
 not_following_you_back = set(following1).difference(set(followers1))
 does_not_follow_back = list(not_following_you_back)
 
-print("Accounts that do not follow you back:" , *does_not_follow_back, sep='\n')
+print("Accounts not following you:" , *does_not_follow_back, sep='\n')
 print("\n")
 
 you_dont_follow_back1 = set(followers1).difference(set(following1))
 you_dont_follow_back = list(you_dont_follow_back1)
 
-print("Accounts that you do not follow back: ", *you_dont_follow_back, sep='\n')
+print("Accounts that you dont follow: ", *you_dont_follow_back, sep='\n')
